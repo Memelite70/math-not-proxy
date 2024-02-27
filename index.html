@@ -15,9 +15,10 @@
     <image id="start-btn" src="stockmathimagelegit.png" style="width: 900px; height: 600px;" /><div>
       <a id="start-btn"  href="go.html" >Play Now!</a></div>
       <script>
-        if (window.self === window.top) {
+       if (window === window.top) {
   // Page is not in an iframe
-  window.close(); // Close the page
+  window.location.href = '/go.html';  // Redirect to a different page
+}
 }</script>
       </center>
   </body>
