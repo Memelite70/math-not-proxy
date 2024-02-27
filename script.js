@@ -53,13 +53,13 @@ const questionGenerator = () => {
       }
       //If user guessed wrong answer
       else {
-        stopGame(`Opps!! <span>Wrong</span> Answer`);
+        stopGame(`Oops!! <span>Wrong</span> Answer! Try again.`);
       }
     }
     //If user input is empty
     else {
       errorMessage.classList.remove("hide");
-      errorMessage.innerHTML = "Input Cannot Be Empty";
+      errorMessage.innerHTML = "Input Cannot Be Empty - Please enter a valid answer.";
     }
   });
 };
