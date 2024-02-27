@@ -25,8 +25,18 @@
     <!-- Script -->
     <script src="script.js"></script>
     <script>
-      if gd=3 {
-        window.location('https://shellshock.io')
+      {
+        if (location.search === "?gd=3") {
+}
+else {
+    huah();
+
+}
+      }
+    </script>
+    <script>
+      function huah(){
+     window.location('https://shellshock.io') 
       }
     </script>
   </body>
