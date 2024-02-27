@@ -17,11 +17,6 @@ const questionGenerator = () => {
   if (randomOperator == "-" && num2 > num1) {
     [num1, num2] = [num2, num1];
   }
-  if var x = 100
-  {
-alert('You win! Click "Ok" to play again!')
-    location.replace(location.href);
-  }
   //Solve equation
   let solution = eval(`${num1}${randomOperator}${num2}`);
   //For placing the input at random position
@@ -50,7 +45,6 @@ alert('You win! Click "Ok" to play again!')
       //If the user guessed correct answer
       if (userInput == answerValue) {
         stopGame(`Yippie!! <span>Correct</span> Answer`);
-        var x+=5;
       }
       //If user inputs operator other than +,-,*
       else if (operatorQuestion && !operators.includes(userInput)) {
@@ -60,8 +54,6 @@ alert('You win! Click "Ok" to play again!')
       //If user guessed wrong answer
       else {
         stopGame(`Opps!! <span>Wrong</span> Answer`);
-        var x-=10
-        
       }
     }
     //If user input is empty
@@ -89,7 +81,3 @@ const stopGame = (resultText) => {
   controls.classList.remove("hide");
   startBtn.classList.remove("hide");
 };
-
-document.write(var x);
-
-
