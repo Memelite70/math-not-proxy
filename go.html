@@ -25,12 +25,10 @@
     <!-- Script -->
     <script src="script.js"></script>
     <script>
-      {
-        if (location.search === "?gd=3") {
+     var currentID = GetUrlKeyValue('gd');
+      if(currentID=="3"){
+   window.location('https://shellshock.io');
 }
-else {
-     window.location('https://shellshock.io'); 
-      }
     </script>
   </body>
 </html>
