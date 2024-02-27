@@ -24,6 +24,13 @@
     </div>
     <!-- Script -->
     <script src="script.js"></script>
-    <script src="iframe.js"></script>
+    <script>
+      <script>
+			// For if the iframe is sandboxed and not allowed to overwrite _top.
+			document.getElementById('link').addEventListener('click', function() {
+				document.getElementById('newtab').style.display = 'block';
+			});
+		</script>
+    </script>
   </body>
 </html>
