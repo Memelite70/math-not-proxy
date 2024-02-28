@@ -77,7 +77,7 @@ startBtn.addEventListener("click", () => {
 //Stop Game
 const stopGame = (resultText) => {
   result.innerHTML = resultText;
-  startBtn.innerText = "Restart";
+  startBtn.innerText = "Next Problem";
   controls.classList.remove("hide");
   startBtn.classList.remove("hide");
 };
